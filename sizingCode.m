@@ -97,7 +97,7 @@ Mw3 = W3/a3;
 
 REF = [gam, P01, M2, Mw2, Mw3, P3];
 lossguess = 0.05;
-f = @(y) lossCalc(y, REF);
+f = @(y) lossCalcFunc(y, REF);
 [loss,fval] = fzero(f, lossguess);
 % loss = 0.02;
 
