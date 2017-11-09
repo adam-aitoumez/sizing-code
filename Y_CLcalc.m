@@ -1,4 +1,7 @@
 function ycl = Y_CLcalc(alpha1, alpha2, Lc, sc, dL, ishr)
+    
+    alpha1 = abs(alpha1);
+    alpha2 = abs(alpha2);
 
     if ishr == 1
         Fb = 0.36;
